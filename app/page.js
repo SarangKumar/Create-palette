@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
 	const [allPalettes, setAllPalettes] = useState([]);
-	const [count, setCount] = useState(3);
+
 
 	const fetchPalettes = async () => {
 		const response = await fetch("/api/color");
@@ -20,7 +20,7 @@ export default function Home() {
 	}, []);
 	return (
 		<>
-			<h1 className="text-[90px] bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center font-bold ">
+			<h1 className="text-[60px] bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center font-extrabold ">
 				Gerua
 			</h1>
 			<div className="flex justify-center items-start">

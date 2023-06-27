@@ -59,7 +59,7 @@ const PaletteForm = () => {
 
 	return (
 		<div className="flex flex-col justify-center items-center w-full gap-y-4">
-			<div className="border border-gray-200 rounded-lg w-full sm:w-2/3 md:w-1/2 shadow-sm p-2 p-4 my-4">
+			<div className="border border-gray-200 rounded-lg w-full sm:w-2/3 md:w-1/2 shadow-sm p-4 mx-5 my-4">
 				<h1 className="font-bold text-3xl relative before:absolute before:w-8 before:h-1 before:bg-blue-600 before:-bottom-0 before:left-1">
 					Create Palette
 				</h1>
@@ -90,6 +90,7 @@ const PaletteForm = () => {
 							/>
 						))}
 					</div>
+					{colors.length < 10 &&
 					<button
 						type="button"
 						className="hover:bg-blue-600 hover:text-white transition-colors border border-gray-200 font-medium text-sm px-3 py-2 rounded-md text-slate-800"
@@ -97,6 +98,7 @@ const PaletteForm = () => {
 					>
 						Add
 					</button>
+					}
 
 					{submitting ? (
 						<button
