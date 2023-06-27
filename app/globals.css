@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.color_transition{
+  transition: all 200ms ease-out;
+  flex: 1 0;  
+
+}
+
+.color_transition:hover{
+  flex-basis: 30%;
+}
