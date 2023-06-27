@@ -40,14 +40,6 @@ export default function Home() {
 					/>
 				))}
 			</section>
-
-			<div className="flex justify-center items-start">
-				<button 
-				
-				className="px-3 py-1 font-sm font-medium border-gray-200 border rounded-md">
-					Load More
-				</button>
-			</div>
 		</>
 	);
 }
