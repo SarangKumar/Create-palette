@@ -17,8 +17,12 @@ const PaletteForm = () => {
 	const createPalette = async (e) => {
 		e.preventDefault();
 		setSubmitting(true);
+		
+		if (name === "") 
+		alert("Please provide a name");
+		setSubmitting(false);
 
-		if (name === "") return;
+		return;
 
 		for (let i = 0; i < colors.length; i++) {
 			if (colors[i] === "") {
