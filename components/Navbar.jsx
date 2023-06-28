@@ -19,9 +19,9 @@ const Navbar = () => {
 	}, []);
 	return (
 		<nav className="shadow-b  shadow-gray-200 px-4 py-2 flex items-center justify-between">
-			<p className="text-lg bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center font-extrabold ">
+			<Link href="/" className="text-lg bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center font-extrabold ">
 				GERUA
-			</p>
+			</Link>
 			{session?.user ? (
 				<div className="flex gap-x-2 items-center">
 					<Link
