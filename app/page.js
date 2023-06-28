@@ -29,7 +29,7 @@ export default function Home() {
 			<section className="flex justify-center items-center gap-5 m-5 flex-wrap">
 				{allPalettes.map((palette) => (
 					<Palette
-						key={palette.id}
+						key={palette._id}
 						{...palette}
 					/>
 				))}

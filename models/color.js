@@ -1,5 +1,4 @@
-// import { Schema, model, models } from "mongoose";
-import { Schema, model } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const ColorSchema = new Schema({
 	creator: {
@@ -23,7 +22,6 @@ const ColorSchema = new Schema({
 	},
 });
 
-// const Color = models.Color || model("Color", ColorSchema);
-const Color =  model("Color", ColorSchema);
+const Color = models.Color || model("Color", ColorSchema);
 
 export default Color;
