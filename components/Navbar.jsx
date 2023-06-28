@@ -37,13 +37,15 @@ const Navbar = () => {
 					>
 						Sign Out
 					</button>
-					<Image
-						src={session?.user.image}
-						height={37}
-						width={37}
-						alt="profile"
-						className="rounded-full"
-					/>
+					<Link href="profile">
+						<Image
+							src={session?.user.image}
+							height={37}
+							width={37}
+							alt="profile"
+							className="rounded-full"
+						/>
+					</Link>
 				</div>
 			) : (
 				<div className="flex items-center gap-x-2 justify-center">

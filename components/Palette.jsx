@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsThreeDots, BsCheckLg } from "react-icons/bs";
