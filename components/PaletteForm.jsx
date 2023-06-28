@@ -17,12 +17,13 @@ const PaletteForm = () => {
 	const createPalette = async (e) => {
 		e.preventDefault();
 		setSubmitting(true);
-		
-		if (name === "") 
-		alert("Please provide a name");
-		setSubmitting(false);
 
-		return;
+		if (name === "") {
+			alert("Please provide a name");
+			setSubmitting(false);
+
+			return;
+		}
 
 		for (let i = 0; i < colors.length; i++) {
 			if (colors[i] === "") {
@@ -140,7 +141,9 @@ const PaletteForm = () => {
 					/>
 				</>
 			) : (
-				<div className="text-gray-800">You need to signin to view this page</div>
+				<div className="text-gray-800">
+					You need to signin to view this page
+				</div>
 			)}
 		</div>
 	);
