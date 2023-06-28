@@ -2,6 +2,7 @@
 
 import Palette from "@components/Palette";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const ProfilePage = () => {
@@ -31,8 +32,28 @@ const ProfilePage = () => {
 						Let&apos;s see your colors
 					</p>
 					<section className="flex justify-center items-center gap-5 m-5 flex-wrap">
-                        {myPalettes.map(palette => <Palette key={palette._id} {...palette}/>)}
-                    </section>
+						{myPalettes.length !== 0 ? (
+							myPalettes.map((palette) => (
+								<Palette
+									key={palette._id}
+									{...palette}
+								/>
+							))
+						) : (
+							<>
+								<p>
+									You don&apos;t have any palettes yet. Create
+									one now
+								</p>
+								<Link
+									href="create-palette"
+									className="text-sm px-3 py-1 border rounded-md border-gray-200 text-gray-800"
+								>
+									Create Palette
+								</Link>
+							</>
+						)}
+					</section>
 				</div>
 			) : (
 				<div className="text-gray-800">
