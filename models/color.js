@@ -1,6 +1,10 @@
 import { Schema, model, models } from "mongoose";
 
 const ColorSchema = new Schema({
+	creator: {
+		type: Schema.Types.ObjectId,
+		ref: "Color",
+	},
 	colors: {
 		type: Array,
 		required: [true, "Colors are required"],

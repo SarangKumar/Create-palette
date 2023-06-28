@@ -20,16 +20,10 @@ export default function Home() {
 	}, []);
 	return (
 		<>
-			<h1 className="text-[60px] bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center font-extrabold ">
-				Gerua
-			</h1>
 			<div className="flex justify-center items-start">
-				<Link
-					href="create-palette"
-					className="px-3 py-1 font-sm font-medium border-gray-200 border rounded-md"
-				>
-					Create Palette
-				</Link>
+			<h1 className="font-bold text-3xl relative before:absolute before:w-8 before:h-1 before:bg-blue-600 before:-bottom-0 before:left-1">
+					Palettes
+				</h1>
 			</div>
 
 			<section className="flex justify-center items-center gap-5 m-5 flex-wrap">
